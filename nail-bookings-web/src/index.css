@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  /* cspell:ignore Jost Bodoni Moda Recolours */
+  --font-sans: 'Jost', system-ui, sans-serif;
+  --font-display: 'Bodoni Moda', Georgia, serif;
+  --font-script: 'Pinyon Script', cursive;
+
+  --color-cream: #f8f4e7;
+  --color-ink: #2b1a20;
+  --color-gold: #b8924a;
+  --color-mauve: #9b4b5d;
+
+  /* Recolours every "pink" class on the whole site */
+  --color-pink-50: #f4e7e6;
+  --color-pink-100: #ecd5d8;
+  --color-pink-200: #e2bcc3;
+  --color-pink-300: #d7a7b1;
+  --color-pink-400: #b9707f;
+  --color-pink-500: #9a4d5c;
+  --color-pink-600: #722f37;
+  --color-pink-700: #5a232b;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+  }
+}
